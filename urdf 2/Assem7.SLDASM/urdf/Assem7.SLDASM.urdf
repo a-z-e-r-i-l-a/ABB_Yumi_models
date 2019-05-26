@@ -1,0 +1,290 @@
+<robot
+  name="Assem7.SLDASM">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="-0.34432 0.59905 -0.48414"
+        rpy="0 0 0" />
+      <mass
+        value="45.252" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_R_1">
+    <inertial>
+      <origin
+        xyz="-0.068703 -0.0050781 -0.047923"
+        rpy="0 0 0" />
+      <mass
+        value="0.96292" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_1"
+    type="revolute">
+    <origin
+      xyz="-0.234 0.53453 0.13935"
+      rpy="0 0 0" />
+    <parent
+      link="Base" />
+    <child
+      link="Link_R_1" />
+    <axis
+      xyz="-0.8138 -0.34202 -0.46985" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_R_2">
+    <inertial>
+      <origin
+        xyz="0.062967 0.013855 0.017688"
+        rpy="0 0 0" />
+      <mass
+        value="1.4105" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_2"
+    type="revolute">
+    <origin
+      xyz="-0.042577 0.0078885 0.0014708"
+      rpy="0 0 0" />
+    <parent
+      link="Link_R_1" />
+    <child
+      link="Link_R_2" />
+    <axis
+      xyz="-0.10678 -0.70672 0.69939" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_R_3">
+    <inertial>
+      <origin
+        xyz="0.08808 0.037337 0.012608"
+        rpy="0 0 0" />
+      <mass
+        value="0.71081" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Link_R_3"
+    type="revolute">
+    <origin
+      xyz="0.12193 0.037871 0.030073"
+      rpy="0 0 0" />
+    <parent
+      link="Link_R_2" />
+    <child
+      link="Link_R_3" />
+    <axis
+      xyz="-0.8138 -0.34202 -0.46985" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_R_4">
+    <inertial>
+      <origin
+        xyz="0.049339 -0.033816 -0.012589"
+        rpy="0 0 0" />
+      <mass
+        value="1.1807" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_R_4"
+    type="revolute">
+    <origin
+      xyz="0.11959 0.015454 0.033874"
+      rpy="0 0 0" />
+    <parent
+      link="Link_R_3" />
+    <child
+      link="Link_R_4" />
+    <axis
+      xyz="-0.10678 -0.70672 0.69939" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_R_5">
+    <inertial>
+      <origin
+        xyz="0.0827344271643081 -0.0758845362718435 -0.103829502629725"
+        rpy="0 0 0" />
+      <mass
+        value="0.343461113460087" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem7.SLDASM/meshes/Link_R_5.STL" />
+    
